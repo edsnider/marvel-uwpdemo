@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="MarvelDemo.Views.AboutView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Margin="20" MaxWidth="300"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top">
+            <TextBlock Text="About this app"
+                       FontSize="24"/>
+            <TextBlock Text="This app was built to demostrate building Windows and Xbox One apps with the Universal Windows Platform (UWP)."
+                       TextWrapping="Wrap"
+                       FontSize="12"/>
+            <TextBlock Text="Developed by: Ed Snider (@edsnider)"
+                       TextWrapping="Wrap"
+                       FontSize="12"
+                       Margin="0,20,0,0"/>
+            <TextBlock Text="The sample data used in this app is provided by Marvel via the Marvel Comics API. For more information about the Marvel Comics API and how to use it visit developer.marvel.com."
+                       TextWrapping="Wrap"
+                       FontSize="12"
+                       Margin="0,20,0,0"/>
+            <TextBlock Text="The icons used in this app are provided by Icons8, distributed under the Creative Commons Attribute-NoDerivs 3.0 Unported license."
+                       TextWrapping="Wrap"
+                       FontSize="12"
+                       Margin="0,20,0,0"
+                       />
+            <TextBlock Text="Data provided by Marvel. © 2014 Marvel"
+                       FontSize="9"
+                       Margin="0,20,0,0"/>
+            <Button x:Name="MarvelLinkButton"
+                    Content="Visit developer.marvel.com"
+                    FontSize="10"
+                    Margin="0,20,0,0"
+                    Click="MarvelLinkButton_OnClick"/>
+            <Button x:Name="Icons8LinkButton"
+                    Content="Visit icons8.com"
+                    FontSize="10"
+                    Margin="0,20,0,0"
+                    Click="Icons8LinkButton_OnClick"/>
+        </StackPanel>
+    </Grid>
+</Page>
